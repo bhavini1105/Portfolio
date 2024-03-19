@@ -1,0 +1,242 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    height: 100vh;
+    
+}
+
+/* Header */
+#header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    /* border: 2px solid black; */
+}
+.logo{
+    height: 60px;
+    width: 60px;
+}
+.menu{
+    width: 40%;
+    /* border: 2px solid blue; */
+}
+.menu>a{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+@media(max-width:600px){
+    #header{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .menu{
+        width: 100%;
+        text-align: center;
+    }
+    .menu>a{
+        display: block;
+    }
+}
+
+/* home */
+
+#home{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: 80px;
+}
+.home-conta{
+    width: 80%;
+    /* border: 2px solid brown; */
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.home-data{
+    width: 50%;
+    margin-top: 20px;
+    /* border: 2px solid green; */
+}
+span{
+    color: rgb(33, 96, 96);
+}
+
+.home-img{
+    width: 40%;
+    margin-top: 20px;
+    /* border: 2px solid yellow; */    
+}
+.home-img>img{
+    height: 320px;
+    width: 320px;
+    border-radius: 80px 0px 80px 0px;
+    border: 8px outset brown;
+    box-shadow: 10px 20px 20px crimson;
+}
+.home-img>img:hover{
+    border: 8px ridge brown;
+}
+
+.home-btn{
+    margin-top: 40px;
+    
+}
+
+.home-btn>button{
+    font-size: 1.2rem;
+    padding: 10px;
+    align-items: center;
+}
+
+.home-btn>button:hover{
+    background-color: rgb(29, 29, 136);
+    cursor: pointer;
+}
+
+@media(max-width:600px){
+    #home>.home-conta{
+        flex-direction: column;
+    }
+    .home-data{
+        width: 100%;
+    }
+    .home-img{
+        margin-top: 30px;
+        height: 220px;
+        width: 220px;
+    }
+    .home-img>img{
+        height: 220px;
+        width: 220px;
+        border-radius: 60px 0px 60px 0px;
+        border: 8px outset brown;
+        box-shadow: 10px 20px 20px crimson;
+    }
+    .home-btn>button{
+        margin-left: 5px;
+    }
+}
+
+/* About */
+#about{
+    /* border: 2px solid black; */
+    width: 100%;
+    margin-top: 80px;
+}
+.about-cont{
+    width: 80%;
+    margin: auto;
+
+}
+.about-container{
+    /* border: 2px solid green; */
+     display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.about-heading{
+    /* border: 2px solid blueviolet; */
+    width: 30%;
+}
+.aboutme-cont{
+    width: 50%;
+    /* border: 2px solid yellowgreen; */
+}
+.about-icon{
+    margin-top: 40px;
+    text-align: center;
+}
+.about-icon>i{
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+.aboutme-span{
+    font-size: 1.5rem;
+}
+.aboutme-txt{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: 30px;
+}
+.aboutme-web{
+    width: 30%;
+    /* border: 2px solid yellow; */
+    box-shadow: 2px 2px 2px 2px gray;
+    margin: 20px;
+}
+.aboutme-web:hover{
+    width: 30%;
+    box-shadow: 4px 6px 4px 4px rgb(26, 26, 26);
+
+}
+
+@media(max-width:600px){
+    .about-container{
+        flex-direction: column;
+    }
+    .about-heading{
+        width: 100%;
+    }
+    .aboutme-cont{
+        width: 100%;
+    }
+    about-icon>i{
+        margin-top: 10px;
+    }
+    .aboutme-txt{
+        flex-direction: column;
+    }
+    .aboutme-web{
+        width: 100%;
+    }
+}
+
+/* Git-hub Stats */
+#github-stats{
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-top: 50px;
+
+}
+h1{
+    text-align: center;
+}
+.github-cont{
+    width: 80%;
+    /* border: 2px solid yellow; */
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-cont>img{
+    height: 200px;
+    width: 300px;
+}
+
+
+@media(max-width:600px){
+    .github-cont>div>img{
+        height: auto;
+        width: 180px;
+        margin-top: 5px;
+    }
+    .github-cont>div{
+        margin-top: 0px;
+    }
+    .github-cont{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+}

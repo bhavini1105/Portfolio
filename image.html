@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+             position: relative;
+            }
+
+    .background-image {
+        width: 450px; /* Adjust as needed */
+        height: 500px; /* Adjust as needed */
+        opacity: 0.8;
+        }
+
+    .foreground-image {
+        position: absolute;
+        border-radius: 50% 50% 0 0;
+        width: 250px;
+        height: 300px;
+        top: 100px; /* Adjust the positioning as needed */
+        left: 350px; /* Adjust the positioning as needed */
+        /* You can also use bottom, right properties to position the image */
+        /* For example: bottom: 20px; right: 20px; */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="./images/cont-bg.jpg" alt="Background Image" class="background-image">
+        <img src="./images/cont-bg.jpg" alt="Foreground Image" class="foreground-image">
+      </div>
+    
+    
+</body>
+</html>
