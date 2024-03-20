@@ -445,6 +445,7 @@ h1{
     width: 100%;
     /* border: 2px solid black; */
     margin-top: 50px;
+    background-color: rgb(194, 223, 249);
 }
 .contact-info{
     width: 80%;
