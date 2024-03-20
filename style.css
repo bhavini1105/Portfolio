@@ -13,7 +13,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    position: fixed;
+    top: 0;
+    background-color: rgb(163, 209, 250);
     /* border: 2px solid black; */
 }
 .logo{
@@ -50,7 +53,7 @@ body{
 #home{
     width: 100%;
     /* border: 2px solid black; */
-    margin-top: 80px;
+    margin-top: 180px;
     background-color: rgb(208, 227, 244);
 }
 .home-conta{
@@ -64,7 +67,8 @@ body{
 
 .home-data{
     width: 50%;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     /* border: 2px solid green; */
 }
 span{
@@ -74,6 +78,7 @@ span{
 .home-img{
     width: 40%;
     margin-top: 20px;
+    margin-bottom: 40px;
     /* border: 2px solid yellow; */    
 }
 .home-img>img{
@@ -100,7 +105,7 @@ span{
 }
 
 .home-btn>button:hover{
-    background-color: rgb(29, 29, 136);
+    background-color: rgb(77, 77, 225);
     cursor: pointer;
 }
 
@@ -109,12 +114,14 @@ span{
         flex-direction: column;
     }
     .home-data{
+        margin-top: 50px;
         width: 100%;
     }
     .home-img{
         margin-top: 30px;
         height: 220px;
         width: 220px;
+        margin-bottom: 80px;
     }
     .home-img>img{
         height: 220px;
@@ -152,6 +159,7 @@ span{
 }
 .aboutme-cont{
     width: 50%;
+    margin-bottom: 40px;
     /* border: 2px solid yellowgreen; */
 }
 .about-icon{
@@ -211,7 +219,7 @@ span{
 #skills{
     width: 100%;
     /* border: 2px solid black; */
-    margin-top: 50px;
+    margin-top: 80px;
     background-color: rgb(207, 224, 239);
 
 }
@@ -272,6 +280,7 @@ span{
 
 #project{
     width: 100%;
+    margin-top: 100px;
     /* border: 2px solid black; */
 }
 .project-cont{
@@ -280,6 +289,7 @@ span{
     /* border: 2px solid crimson; */
     margin: auto;
     display: flex;
+    justify-content: space-around;
     background-image: url(./images/project.jpg);
     background-position: center;
     background-size: cover;
@@ -302,7 +312,8 @@ span{
     /* border: 2px solid crimson; */
     margin: auto;
     display: flex;
-    background-image: url(./images/chessboard.jpg);
+    justify-content: space-around;
+    background-image: url(./images/chess.jpg);
     background-position: center;
     background-size: cover;
     margin-top: 30px;
@@ -319,6 +330,7 @@ span{
     /* border: 2px solid crimson; */
     margin: auto;
     display: flex;
+    justify-content: space-around;
     background-image: url(./images/wireframe.jpg);
     background-position: center;
     background-size: cover;
@@ -330,6 +342,14 @@ span{
     margin-top: 90px;
     margin-left: 30px;
 }
+
+.project-lang{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,50px);
+    grid-template-rows: repeat(2,50px);
+}
+
 
 @media(max-width:600px){
     #project{
