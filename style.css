@@ -13,10 +13,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* margin-top: 20px; */
-    position: fixed;
+    margin-top: 20px;
+    /* position: fixed; */
     top: 0;
-    background-color: rgb(163, 209, 250);
+    background-color: rgb(155, 204, 248);
     /* border: 2px solid black; */
 }
 .logo{
@@ -30,6 +30,8 @@ body{
 .menu>a{
     margin-left: 15px;
     font-size: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 @media(max-width:600px){
@@ -72,7 +74,7 @@ body{
     /* border: 2px solid green; */
 }
 span{
-    color: rgb(33, 96, 96);
+    color: rgb(2, 59, 45);
 }
 
 .home-img{
@@ -85,11 +87,11 @@ span{
     height: 320px;
     width: 320px;
     border-radius: 80px 0px 80px 0px;
-    border: 8px outset brown;
-    box-shadow: 10px 10px 10px crimson;
+    border: 8px outset rgb(13, 51, 51);
+    box-shadow: 10px 10px 10px rgb(14, 40, 40);
 }
 .home-img>img:hover{
-    border: 8px ridge brown;
+    border: 8px ridge rgb(13, 51, 51);
 }
 
 .home-btn{
@@ -101,11 +103,14 @@ span{
 .home-btn>button{
     font-size: 1.2rem;
     padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px rgb(53, 53, 53);
     align-items: center;
 }
 
 .home-btn>button:hover{
-    background-color: rgb(77, 77, 225);
+    background-color: rgb(23, 56, 56);
+    color: antiquewhite;
     cursor: pointer;
 }
 
@@ -357,7 +362,7 @@ span{
     }
     .project-cont{
         width: 90%;
-        height: 450px;
+        height: auto;
         /* border: 2px solid crimson; */
         margin: auto;
         display: flex;
@@ -372,14 +377,17 @@ span{
         /* border: 2px solid grey; */
         margin-top: 90px;
         margin-left: 30px;
+
     }
     .project-cont1{
         width: 90%;
-        height: 450px;
+        height: auto;
         /* border: 2px solid crimson; */
         margin: auto;
         display: flex;
-        background-image: url(./images/chessboard.jpg);
+        flex-direction: column;
+        flex-direction: column;
+        background-image: url(./images/chess.jpg);
         background-position: center;
         background-size: cover;
         margin-top: 30px;
@@ -393,10 +401,11 @@ span{
     }   
     .project-cont2{
         width: 90%;
-        height: 450px;
+        height: auto;
         /* border: 2px solid crimson; */
         margin: auto;
         display: flex;
+        flex-direction: column;
         background-image: url(./images/wireframe.jpg);
         background-position: center;
         background-size: cover;
@@ -412,8 +421,13 @@ span{
 
     .project-icon>i{
         font-size: 1.8rem;
-        float: right;
-        margin-top: 25px;
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .project-lang{
+        margin-top: 10px;
+        margin-left: 25px;
     }
     
 }
@@ -463,8 +477,10 @@ h1{
 /* Contact */
 #contact{
     width: 100%;
+    height: 600px;
     /* border: 2px solid black; */
     margin-top: 50px;
+    margin-bottom: 20px;
     background-color: rgb(194, 223, 249);
 }
 .contact-info{
@@ -478,12 +494,15 @@ h1{
     width: 40%;
     /* border: 2px solid yellow; */
     margin-top: 20px;
+    box-shadow: 6px 6px 6px 6px rgb(12, 59, 59);
 }
 .contact-form{
     width: 40%;
     /* height: fit-content; */
     /* border: 2px solid green; */
     margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 6px 6px 6px 6px rgb(12, 59, 59);
 }
 .contact-icon{
     margin-top: 50px ;
@@ -509,10 +528,12 @@ h1{
 }
 button{
     font-size: 1.2rem;
+    border-radius: 6px;
 }
 
 .submit-btn:hover{
-    background-color: rgb(29, 29, 136);
+    background-color: rgb(23, 56, 56);
+    color: antiquewhite;
     cursor: grabbing;
 }
 
@@ -522,11 +543,12 @@ button{
         flex-direction: column;
     }
     .contact-txt{
-        width: 100%;
+        width: 90%;
+        margin-left: 10px;
     }
     .contact-form{
         width: 80%;
-        margin-left: 0;
+        margin-left: 10px;
     }
 
 }
